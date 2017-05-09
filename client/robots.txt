@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 User-agent: *
 Disallow: 
 
 Sitemap: https://www.congnghemiennam.vn/sitemap.xml
+=======
+robots.txt
+>>>>>>> d60b7f2c48bc87915a27225e9a4a20e8e0fe98f2
