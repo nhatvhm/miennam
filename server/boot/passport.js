@@ -19,7 +19,7 @@ module.exports = function (app) {
     model: app.models.accessToken
   }));
 
-  app.use(cookieParser());
+  app.use(cookieParser(app.get('cookieSecret')));
   app.use(session({
     secret: app.get('cookieSecret'),
     saveUninitialized: true,
@@ -27,7 +27,7 @@ module.exports = function (app) {
   }));
 
   var config = false;
-  try {
+  try {app.get('cookieSecret')
     config = require('../../providers.json');
   } catch (err) {
     console.error('Please configure your passport strategy in `providers.json`.');
