@@ -26,7 +26,7 @@ angular.module('com.module.core')
       gettextCatalog.setCurrentLanguage(langKey);
     };
 
-    $scope.appName = 'LB-NG-BS';
+    $scope.appName = 'MienNam';
     $scope.apiUrl = CoreService.env.apiUrl;
     $scope.appTheme = 'skin-blue';
     $scope.appThemes = [{

@@ -5,20 +5,27 @@
 
 angular
   .module('app', [
-    'lbServices',
-    'ui.bootstrap',
-    'ui.codemirror',
-    'ui.gravatar',
-    'ui.grid',
-    'ui.router',
+    'angular.filter',
+    'angularBootstrapNavTree',
+    'angularFileUpload',
+    'btford.markdown',
+    'oitozero.ngSweetAlert',
     'config',
+    'formly',
+    'lbServices',
+    'monospaced.elastic',
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'toasty',
+    'ui.bootstrap',
+    'ui.codemirror',
+    'ui.gravatar',
+    'ui.grid',
+    'ui.router',
+    'angular-toasty',
     'autofields',
     'gettext',
     'com.module.core',
@@ -33,6 +40,20 @@ angular
     'com.module.settings',
     'com.module.users'
   ])
+  .run(function($rootScope, gettextCatalog) {
+
+    $rootScope.langs = {
+      'us': gettextCatalog.getString('English'),
+      'nl': gettextCatalog.getString('Dutch')
+    };
+
+    var LangVar = navigator.language || navigator.userLanguage;
+    var userLangVar = LangVar.substring(0, 2) + '-' + LangVar.substring(3, 5).toUpperCase();
+    $rootScope.lang = userLangVar;
+    gettextCatalog.setCurrentLanguage(userLangVar);
+
+  });
+  /*
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
       $urlRouterProvider) {
     $stateProvider
@@ -43,4 +64,4 @@ angular
       });
 
     $urlRouterProvider.otherwise('todo');
-  }]);
+  }]);*/

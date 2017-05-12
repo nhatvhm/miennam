@@ -16,6 +16,6 @@ angular.module ('com.module.core')
       $location.path ('/login');
     } else {
       console.log ('Redirect to app');
-      $location.path ('/app');
+      $location.path ('/');
     }
   });

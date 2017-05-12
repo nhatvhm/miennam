@@ -9,6 +9,8 @@ angular.module('com.module.users')
     login: function (data, cb) {
       var self = this;
       LoopBackAuth.currentUserId = LoopBackAuth.accessTokenId = null;
+      console.log('email: ', data.email);
+      console.log('email: ', data.password);
       $http.post('/api/users/login?include=user', {email: data.email, password: data.password})
         .then(function (response) {
         if (response.data && response.data.id) {
