@@ -11,7 +11,7 @@
   "relations": {
     "accessTokens": {
       "type": "hasMany",
-      "model": "accessToken",
+      "model": "AccessToken",
       "foreignKey": "userId"
     },
     "identities": {

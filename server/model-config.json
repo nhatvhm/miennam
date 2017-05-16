@@ -19,7 +19,14 @@
   },
   "AccessToken": {
     "dataSource": "db",
-    "public": false
+    "public": false,
+    "relations": {
+      "user": {
+        "type": "belongsTo",
+        "model": "user",
+        "foreignKey": "userId"
+      }
+    }
   },
   "userCredential": {
     "dataSource": "db",
@@ -49,7 +56,7 @@
     "public": true
   },
   "user": {
-    "dataSource": "postgresDB",
+    "dataSource": "db",
     "public": true
   },
   "AuthProvider": {
