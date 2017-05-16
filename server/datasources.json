@@ -15,6 +15,7 @@
    "port": 5432,
    "database": "d2perhf7oipjd0",
    "username": "bmroerigcxbbll",
-   "password": "c6b38772c16588cb0c2f49c5088161785755c8552c4340cf2918053b2ae90285"
+   "password": "c6b38772c16588cb0c2f49c5088161785755c8552c4340cf2918053b2ae90285",
+   "ssl": true
   }
 }

@@ -24,7 +24,7 @@ module.exports = function (app) {
           {
             firstName: 'Administrator',
             lastName: 'User',
-            email: 'admin@admin.com',
+            email: 'congnghemiennam.vn@gmail.com',
             username: 'admin',
             password: 'admin'
           }
