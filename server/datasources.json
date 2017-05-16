@@ -7,7 +7,7 @@
     "name": "storage",
     "connector": "loopback-component-storage",
     "provider": "filesystem",
-    "root": "containers"
+    "root": "./server/storage"
   },
   "postgresDB": {
    "connector": "postgresql",
