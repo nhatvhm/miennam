@@ -148,14 +148,26 @@ header {
 	background-clip: content-box;
 }
 
-.productitemname{
-	background: url("../images/productnamebg.png");
-	width: 270px;
-	height: 34px;
+
+.product-item-name{
+	border: 1px solid #efefef;
+	border-radius: 3px;
+	width: 100%;
+	height: 100%;
+	min-height: 34px!important;
 	color: #709b1d;
-	margin-top: -20px;
-	margin-left: 45px;
-	text-align: center;
+	margin-top: -17px!important;
+	background: white;
+	position: relative;
+}
+
+.position-text {
+    top:-17px!important;
+    position: absolute;
+    color: #709b1d;
+    text-align: center;
+    margin-left: -10px!important;
+   	width: 100%;
 }
 
 .nav-tabs {
@@ -164,9 +176,7 @@ header {
 
 .product {
 	border: 3px solid #efefef;
-	height: 316px;
 	background-color: #ffffff;
-	text-align: center;
 }
 
 .controlproductbg {
@@ -176,18 +186,14 @@ header {
 
 .controladdcart {
 	margin-top: 13px;
-	margin-left: 12px;
-	text-align: center;
 }
 
 .controlwish {
 	margin-top: 13px;
-	margin-left: -40px;
 }
 
 .controlswitch {
 	margin-top: 13px;
-	margin-left: -12px;
 }
 
 .brand {
@@ -213,14 +219,15 @@ header {
 	height: 417px;
 }
 
+
 .leftarrow {
-	top: 7px;
-	left: 4px;
+	top: 3px;
+	left: 3px;
 }
 
 .rightarrow {
-	top: 7px;
-	right: 4px;
+	top: 3px;
+	right: 3px;
 }
 
 .subcribe {
