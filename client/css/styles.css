@@ -180,21 +180,26 @@ header {
 }
 
 .controlproductbg {
-	height: 82px;
+	height: 82px; 
 	background-color: #709b1d;
 }
 
-.controladdcart {
-	margin-top: 13px;
+.control-item-left {
+	margin-top: 12px;
+	padding-right: 0;
 }
 
-.controlwish {
-	margin-top: 13px;
+.control-item-center {
+	margin-top: 12px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
-.controlswitch {
-	margin-top: 13px;
+.control-item-right {
+	margin-top: 12px;
+	padding-left: 0;
 }
+
 
 .brand {
 	height: 185px;
